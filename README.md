@@ -63,19 +63,21 @@ Output & Examples
 
 For any request a JSON formatted reply is provided.
 
-Basing on the request, the response is a JSON with this info (in green
-info displayed only if request is valid and no error occurred, in red
-info displayed only if request is invalid or error occurred):
-                
-      {
-        "status" : a string with value "ok" or "error" 
-        "sequence" : a JSON holding the indexed number sequence 
-        "odd" : the number of the odd numbers present in the sequence   
-        "even" : the number of the even numbers present in the sequence   
-        "error_code" : the code number of the error (list of errors below)  
-        "message" : a string message related to the specific error occurred 
-      }             
-          
+Basing on the request, the response is a JSON with this info: 
+```
+"status" : a string with value "ok" or "error" 
+```
+Plus this info if the request is valid and no error occurred:
+```
+"sequence" : a JSON holding the indexed number sequence 
+"odd" : the number of odd numbers present in the sequence   
+"even" : the number of even numbers present in the sequence   
+```
+Else this info if the request is invalid or an error occured:
+```
+"error_code" : the code number of the error (list of errors below)  
+"message" : a string message related to the specific error occurred 
+```     
 
 ### **Example of successful request without limit parameter**
 >
