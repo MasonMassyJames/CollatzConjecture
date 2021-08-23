@@ -67,7 +67,7 @@ Basing on the request, the response is a JSON with this info:
 ```
 "status" : a string with value "ok" or "error" 
 ```
-Plus this info if the request is valid and no error occurred:
+Plus this info if the request is valid and no error occured:
 ```
 "sequence" : a JSON holding the indexed number sequence 
 "odd" : the number of odd numbers present in the sequence   
@@ -76,7 +76,7 @@ Plus this info if the request is valid and no error occurred:
 Else this info if the request is invalid or an error occured:
 ```
 "error_code" : the code number of the error (list of errors below)  
-"message" : a string message related to the specific error occurred 
+"message" : a string message related to the specific error occured 
 ```     
 
 ### **Example of successful request without limit parameter**
