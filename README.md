@@ -8,7 +8,7 @@ The API
 -   [How It Works](#wiw)
 -   [Output & Examples](#o&e)
 -   [Errors](#errors)
--   [Source Code & Examples](#source)
+-   [Usage Tips & PHP Call Examples](#tips)
   
 <br>
 
@@ -77,7 +77,9 @@ Else this info if the request is invalid or an error occured:
 ```
 "error_code" : the code number of the error (list of errors below)  
 "message" : a string message related to the specific error occured 
-```     
+```      
+
+          
 
 ### **Example of successful request without limit parameter**
 >
@@ -145,25 +147,15 @@ Here's the list of possible errors coming from API
 
 <br>
 
-Source Code & Examples
+Source Code & Examples<a name="tips"></a>
 ---------------------
-
-This is meant to be an open API but also an open source free project.
-The source code is available at this link. Please feel free to use it,
-partially or wholly, as you need to. Any advice or correction about it
-will be very appreciated:
-**[massimo.geloni@gmail.com](mailto:%20massimo.geloni@gmail.com)**.
 
 ### **Project tree**
 
 ![project tree](public/assets/img/tree.png)
 
 In the previous image you can see the complete project tree you will
-find in the github repo. The application consuming the API is written in
-a functional-procedural style, while the API is an Object driven
-architecture. The JS client-side logic interpreting JSON and showing
-graphs lies in the scripts.js file. The API lies in the the omonym
-folder you can see in details in the image below.
+find in the github repo **[github.com/MasonMassyJames/CollatzConjecture](https://github.com/MasonMassyJames/CollatzConjecture)**. The application consuming the API is written in a functional-procedural style, while the API is an Object driven architecture. The JS client-side logic interpreting JSON and showing graphs lies in the scripts.js file. The API lies in the the omonym folder you can see in details in the image below.
 
 ![project tree](public/assets/img/tree_api.png)
 
