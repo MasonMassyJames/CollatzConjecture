@@ -1,0 +1,233 @@
+:root {
+  --app_blue: #2e5571;
+  --app_blue_trasp: #2e557146;
+  --app_light_blue: #046b9e;
+  --app_gray: #3c4655;
+  --app_black_trasp: #00000044;
+  --app_white_trasp: #ffffff44;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+footer {
+  flex-shrink: 0;
+}
+
+section {
+  padding-top: 3rem;
+}
+
+.row {
+  max-width: 100vw;
+}
+
+header.masthead .bg-circle {
+  background: linear-gradient(0deg, var(--app_black_trasp) 0%, var(--app_white_trasp) 100%);
+}
+
+header.masthead {
+  /* background: linear-gradient(0deg, #3c4655 0%, #04027a 100%); */
+  background-image: url('../assets/img/fractal-1746830_1920.jpg');
+}
+
+p {
+  font-size: 20px;
+}
+
+#api_folder_img {
+  max-width: 500px !important;
+}
+
+.btn-primary,
+.swal2-styled.swal2-confirm {
+  color: #fff;
+  background-color: var(--app_blue);
+  border-color: var(--app_light_blue);
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle,
+.swal2-actions:not(.swal2-loading) .swal2-styled:active {
+  color: #fff;
+  background-color: var(--app_light_blue);
+  border-color: var(--app_blue);
+}
+
+.btn-check:focus + .btn-primary, .btn-primary:focus, .btn-primary:hover,
+.swal2-actions:not(.swal2-loading) .swal2-styled:hover  {
+  color: #fff;
+  background-color: var(--app_light_blue);
+  border-color: transparent;
+  /* box-shadow: 0 0 0 0.25rem var(--app_blue_trasp); */
+  -webkit-box-shadow: 0px 0px 50px 3px #75c6ff; 
+  box-shadow: 0px 0px 50px 3px #75c6ff;
+}
+
+.btn-check:checked + .btn-primary:focus, .btn-check:active + .btn-primary:focus, .btn-primary:active:focus, .btn-primary.active:focus, .show > .btn-primary.dropdown-toggle:focus,
+.swal2-actions:not(.swal2-loading) .swal2-styled:hover {
+  -webkit-box-shadow: 0px 0px 50px 3px #75c6ff; 
+  box-shadow: 0px 0px 50px 3px #75c6ff;
+}
+
+a {
+  color: var(--app_blue);
+}
+
+a:hover {
+  color: var(--app_light_blue);
+}
+
+.form_container {
+  padding: 15px;
+  outline: 1px solid var(--app_blue);
+}
+
+.left_container {
+  padding: 3rem 0.5rem;
+}
+
+.container {
+  padding: 0 5rem;
+}
+
+.form-control:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: var(--app_blue);
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem var(--app_blue_trasp);
+}
+
+.rounded-circle {
+  max-height: 300px;
+}
+
+.chart_row {
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+
+.equation {
+  border: 1px solid var(--app_light_blue);
+  border-radius: 50%;
+}
+
+#evenOddChart {
+  height: 300px!important;
+}
+
+.api_legend {
+  font-weight: bolder;
+}
+
+.language-text {
+  background: #22344b;
+  padding: 1rem 2rem;
+  color: white;
+  border-radius: 10px;
+  font-weight: bolder;
+}
+
+.language-text pre {
+  margin-bottom: 0;
+}
+
+.parameter {
+  overflow: auto;
+}
+
+.parameter pre {
+  background: #e0e0e0;
+  padding: 0.5rem;
+  width: fit-content;
+  border-radius: 10px;
+}
+
+code {
+  font-size: 0.875em;
+  color: var(--app_blue);
+  word-wrap: break-word;
+}
+
+.example_container {
+  padding-left: 1.5rem;
+  border-left: 1px solid var(--app_blue);
+}
+
+#param_tbl {
+  min-width: 500px;
+}
+
+.code-screen {
+  background: #c1c1c3;
+  padding: 1.2rem;
+  border-radius: 20px;
+  box-shadow: 17px 13px 45px -3px #969595;
+}    
+
+
+@media (max-width: 767.98px) {
+  p {
+    font-size: 15px;
+  }
+
+  .input-group-lg > .form-control, .input-group-lg > .form-select, .input-group-lg > .input-group-text, .input-group-lg > .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.90rem;
+    border-radius: 0.3rem;
+  }
+
+  .container {
+    padding: 0 3.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  header.masthead .masthead-content .masthead-heading {
+    font-size: 3rem;
+  }
+
+  header.masthead .masthead-content .masthead-subheading {
+    font-size: 1.5rem;
+    margin-top: 15px;
+    margin-bottom: -20px!important;
+  }
+
+  .btn-lg, .btn-group-lg > .btn {
+    padding: 0.4rem 0.9rem;
+    font-size: 0.8rem;
+  }
+
+  .chart_row {
+    margin-top: 15px;
+    margin-bottom: 40px;
+  }
+
+  footer {
+    padding: 20px 5px!important;
+    font-size: 10px;
+  }
+
+  .navbar-custom .navbar-brand {
+    text-transform: uppercase;
+    font-size: 0.5rem;
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+  }
+
+  .container {
+    padding: 0 2rem;
+  }
+
+}
